@@ -1,0 +1,128 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.invitation-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 100%;
+    padding: 20px;
+}
+
+.invitation-card {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 8px;
+    color: #333;
+}
+
+.invitation-card {
+
+    color: #fff;
+    text-align: center;
+}
+
+.invitation-card h1 {
+    font-size: 2.5rem;
+    font-family: 'Pacifico', sans-serif;
+    color: #f6a454;
+    margin: 10px 0;
+}
+.header {
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 8px;
+}
+
+.text_head {
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.text_title {
+    font-size: 22px;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 12px;
+}
+.text_info {
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 8px;
+    width: 600px;
+}
+.location {
+    font-size: 20px;
+    margin-top: 20px;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 30px;
+}
+
+.date {
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+    color: #f6a454;
+    ;
+    margin-top: 20px;
+}
+
+.location_google {
+    padding: 12px;
+    text-decoration: none;
+    background: #fff;
+    border-radius: 20px;
+    color: #000;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+}
+
+@media (min-width: 600px) {
+    .invitation-container {
+        flex-wrap: nowrap;
+    }
+
+    .invitation-card,
+    .menu-card {
+        max-width: 100%;
+    }
+
+    .text_info {
+        font-size: 18px;
+        font-family: "Montserrat", sans-serif;
+        margin-bottom: 8px;
+        width: fit-content;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .invitation-card,
+    .menu-card {
+        width: 100%;
+    }
+    .text_info {
+        font-size: 18px;
+        font-family: "Montserrat", sans-serif;
+        margin-bottom: 8px;
+        width: fit-content;
+    }
+}

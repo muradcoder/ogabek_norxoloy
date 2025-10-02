@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta property="og:description" content="Ҳурматли меҳмонларимиз! Азиз фарзандларимиз Оғабек ва Норхолойнинг никоҳ тўйлари муносабати билан, 2025 йил 24 октябрь куни соат 18:00 да Навоий шаҳар «Диёра» тўйлар масканида бўлиб ўтадиган тўй оқшомига марҳамат этинг! Ҳурмат билан: Каримовлар ва Қодировлар оиласи."/>
+	<meta name="keywords" content="тўй таклифнома, никоҳ тўйи, Оғабек ва Норхолой, тўй 2025, Навоий тўйхона, Диёра тўйлар маскани, тўй электрон таклиф, никоҳ, тўй маросими, электрон таклифнома">
+	<meta property="og:url" content="https://uzkawsar.uz"/>
+	<meta property="og:title" content="Оғабек ва Норхолойнинг никоҳ тўйига таклифнома !"/>
+    <meta property="og:description" content="Ҳурматли меҳмонларимиз! Азиз фарзандларимиз Оғабек ва Норхолойнинг никоҳ тўйлари муносабати билан, 2025 йил 24 октябрь куни соат 18:00 да Навоий шаҳар «Диёра» тўйлар масканида бўлиб ўтадиган тўй оқшомига марҳамат этинг! Ҳурмат билан: Каримовлар ва Қодировлар оиласи."/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta property="og:image" content="https://uzkawsar.uz/file/img/og-img.jpg"/>
+	<link rel="canonical" href="https://uzkawsar.uz/">
+	<meta name="theme-color" content="#002923">
+	<meta name="msapplication-navbutton-color" content="#002923">
+	<meta name="apple-mobile-web-app-capable" content="#002923">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таклифнома</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="invitation-container">
+        <div class="invitation-card">
+            <p class="text_title">Ҳурматли меҳмонларимиз!</p>
+            <p class="text_head">Сизни азиз фарзандларимиз</p>
+            <h1>Оғабек ва Норхолой</h1>
+            <p class="text_info">ларнинг никоҳ тўйлари муносабати билан тўй оқшомига 2025 йил 24 октябрь куни соат 18:00
+                да таклиф этамиз.</p>
+            <p class="header">Ҳурмат ва эҳтиром ила: Каримовлар ва Қодировлар оиласи</p>
+            <p class="date" id="countdown">24 | 10 | 2025 соат: 18:00</p>
+            <p class="location">Тўйхона манзили: Навоий шаҳар «Диёра» тўйлар маскани</p>
+            <a class="location_google" href="https://maps.app.goo.gl/B1Rd2mE2WXVfH44a6" target="_blank">Харита орқали манзилни кўриш</a>
+        </div>
+    </div>
+
+    <!-- Background Music -->
+    <audio id="background-music" src="audio.mp3" loop></audio>
+
+    <script>
+        // Play background music at a low volume
+        window.addEventListener('DOMContentLoaded', () => {
+            const music = document.getElementById("background-music");
+            music.volume = 0.2; // Adjust volume as needed
+            music.play().catch(error => {
+                console.log("Auto-play is disabled by the browser. User interaction is required.");
+            });
+        });
+
+        // Countdown timer to the wedding date
+        function updateCountdown() {
+            const weddingDate = new Date("2025-10-24T18:00:00");
+            const now = new Date();
+            const timeDifference = weddingDate - now;
+
+            if (timeDifference > 0) {
+                const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+                document.getElementById("countdown").textContent =
+                    `${days} кун ${hours} соат ${minutes} дақиқа ${seconds} сония қолди`;
+            } else {
+                document.getElementById("countdown").textContent = "Тўй куни етиб келди!";
+            }
+        }
+
+        // Update countdown every second
+        setInterval(updateCountdown, 1000);
+    </script>
+</body>
+
+</html>

@@ -48,6 +48,7 @@ body {
     color: #f6a454;
     margin: 10px 0;
 }
+
 .header {
     font-size: 18px;
     font-family: "Montserrat", sans-serif;
@@ -64,12 +65,14 @@ body {
     font-family: "Montserrat", sans-serif;
     margin-bottom: 12px;
 }
+
 .text_info {
     font-size: 18px;
     font-family: "Montserrat", sans-serif;
     margin-bottom: 8px;
     width: 600px;
 }
+
 .location {
     font-size: 20px;
     margin-top: 20px;
@@ -86,12 +89,12 @@ body {
 }
 
 .location_google {
-    padding: 12px;
+    padding: 10px;
     text-decoration: none;
     background: #fff;
     border-radius: 20px;
     color: #000;
-    font-size: 18px;
+    font-size: 16px;
     font-family: "Montserrat", sans-serif;
 }
 
@@ -119,10 +122,25 @@ body {
     .menu-card {
         width: 100%;
     }
+
     .text_info {
         font-size: 18px;
         font-family: "Montserrat", sans-serif;
         margin-bottom: 8px;
         width: fit-content;
+    }
+}
+
+
+@media (max-width: 380px) {
+
+    .location_google {
+        padding: 10px;
+        text-decoration: none;
+        background: #fff;
+        border-radius: 20px;
+        color: #000;
+        font-size: 12px;
+        font-family: "Montserrat", sans-serif;
     }
 }
